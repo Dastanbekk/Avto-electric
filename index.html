@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/svg/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто-Электроника</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet"/>
+    <link rel="stylesheet" href="../dist/css/output.css">
+</head>
+<body class=" font-golos">
+    <nav >
+        
+        <div class="topbar py-[17px] bg-white z-50 w-full shadow-md md:shadow-none" > 
+            <div class="containerr">
+                <div class="  z-50  flex justify-between gap-[30px] items-center">
+                    <div class="md:hidden  block">
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                              <span></span>
+                            </label>
+                        
+                            <ul class="menu__box ">
+                              <li><a class="menu__item" href="#">Главная</a></li>
+                                    <li><a  class="menu__item" href="#">Проекты</a></li>
+                                    <li><a  class="menu__item" href="#">Команда</a></li>
+                                    <li><a  class="menu__item" href="#">Блог</a></li>
+                                    <li><a  class="menu__item" href="#">Контакты</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div>
+                        <img src="../assets/svg/logo.svg" alt="">
+                    </div>
+                    <div class="sm:hidden">
+                        <img src="../assets/svg/search2.svg" alt="">
+                    </div>
+                    <div class="hidden  md:block">
+                        <div class="dropdown relative inline-flex">
+                            <button type="button" data-target="dropdown-default" class="dropdown-toggle inline-flex justify-center items-center gap-2 py-3 px-6 text-[18px] bg-[#F56E1E] text-white rounded-xl cursor-pointer font-semibold text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 "> 
+                                <img src="../assets/svg/hamburger.svg" alt="hamburger">
+                                <p>Каталог</p>
+                            </button>
+                            <div id="dropdown-default" class="dropdown-menu rounded-xl shadow-lg bg-white absolute top-full w-72 mt-2 open" aria-labelledby="dropdown-default">
+                            <ul class="py-2">
+                              <li>
+                                <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="javascript:;"> Downloads </a>
+                              </li>
+                              <li>
+                                <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="javascript:;"> Saved Files </a>
+                              </li>
+                              <li>
+                                <a class="block px-6 py-2 hover:bg-gray-100 text-gray-900 font-medium" href="javascript:;"> Notifications </a>
+                              </li>
+                              <li>
+                                <a class="block px-6 py-2 hover:bg-gray-100 text-red-500 font-medium" href="javascript:;"> Log Out </a>
+                              </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <form class=" hidden sm:flex border-2 max-w-[700px] gap-[10px] w-full rounded-xl py-[17px] px-[14px] justify-between">
+                        <input class="outline-none w-full" type="text" placeholder="Я ищу">
+                        <img src="../assets/svg/search.svg" alt="">
+                    </form>
+                    <div class="hidden md:flex flex-col text-center justify-center cursor-pointer items-center">
+                        <img src="../assets/svg/cart.svg" alt="">
+                        <p class="text-[#6E7191]">Корзина</p>
+                    </div>
+                    <div class=" hidden md:flex flex-col cursor-pointer text-center justify-center items-center">
+                        <img src="../assets/svg/cloud.svg" alt="">
+                        <p class="text-[#6E7191]">Избранное</p>
+                    </div>
+                    <div class="hidden md:flex flex-col text-center cursor-pointer justify-center items-center">
+                        <img src="../assets/svg/user.svg" alt="">
+                        <p class="text-[#6E7191]">Профиль</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="containerr">
+            <div class="navbar hidden mt-[20px] flex-wrap md:flex justify-between gap-[30px] items-center">
+                <div>
+                    <select name="" id="" class="outline-none">
+                        <option value="" class="outline-none">RU</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="" class="w-[120px] outline-none">
+                        <option value="" class="outline-none">О компании</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="" class=" w-[100px] outline-none">
+                        <option value="" class="outline-none">Клиентам</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="text-[#6E7191]">
+                        Сотрудничество
+                    </p>
+                </div>
+                <div>
+                    <p class="text-[#6E7191]">
+                        Контакты
+                    </p>
+                </div>
+                <div class="flex items-center gap-[16px]">
+                    <img src="../assets/svg/tg.svg" alt="">
+                    <img src="../assets/svg/vk.svg" alt="">
+                </div>
+                <div>
+                    <select name="" id="" class="w-[150px] outline-none">
+                        <option value="8 (800) 455-45-11">8 (800) 455-45-11</option>
+                    </select>
+                </div>
+                <div class="py-[7px] flex gap-[10px] px-[12px] bg-[#F56E1E] rounded-lg">
+                    <img src="../assets/svg/tel.svg" alt="">
+                    <p class="text-white hidden lg:block ">Заказть звонок</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-[17px]">
+        <div class="containerr">
+            <div class="w-full relative">
+                <div class="swiper progress-slide-carousel swiper-container relative">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-indigo-50 rounded-2xl h-full flex justify-center items-center">
+                        <img src="../assets/img/hero.png" alt="" class="w-full">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-indigo-50 rounded-2xl h-full flex justify-center items-center">
+                        <img src="../assets/img/hero.png" alt="" class="w-full">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-indigo-50 rounded-2xl h-full w-full">
+                        <img src="../assets/img/hero.png" alt="" class="w-full">
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
+                </div>
+                </div>
+        </div>
+    </header>
+
+
+    <!-- Main Start -->
+    <main>
+
+        <section class="category mb-[30px] md:mb-[60]">
+            <div class="containerr">
+                <h3 class="text-[#6E7191] font-bold text-[18px] sm:text-[36px]">
+                    Популярные категории
+                </h3>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-[30px] mt-[30px]">
+                    <div class=" cursor-pointer card flex flex-col items-center rounded-xl border-2 border-transparent  bg-[#F1F1F1] hover:border-2 hover:border-[#DE5703] py-[24px] gap-[12px]">
+                        <img src="../assets/svg/category1.svg" alt="">
+                        <p class=" card-text w-[164px] text-center">Стартеры 
+                            и комплектующие</p>
+                    </div>
+                    <div class=" cursor-pointer card flex flex-col items-center rounded-xl border-2 border-transparent  bg-[#F1F1F1] hover:border-2 hover:border-[#DE5703] py-[24px] gap-[12px]">
+                        <img src="../assets/svg/category1.svg" alt="">
+                        <p class=" card-text w-[164px] text-center">Стартеры 
+                            и комплектующие</p>
+                    </div>
+                    <div class=" cursor-pointer card flex flex-col items-center rounded-xl border-2 border-transparent  bg-[#F1F1F1] hover:border-2 hover:border-[#DE5703] py-[24px] gap-[12px]">
+                        <img src="../assets/svg/category1.svg" alt="">
+                        <p class=" card-text w-[164px] text-center">Стартеры 
+                            и комплектующие</p>
+                    </div>
+                    <div class=" cursor-pointer card flex flex-col items-center rounded-xl border-2 border-transparent  bg-[#F1F1F1] hover:border-2 hover:border-[#DE5703] py-[24px] gap-[12px]">
+                        <img src="../assets/svg/category1.svg" alt="">
+                        <p class=" card-text w-[164px] text-center">Стартеры 
+                            и комплектующие</p>
+                    </div>
+                    <div class=" cursor-pointer card flex flex-col items-center rounded-xl border-2 border-transparent  bg-[#F1F1F1] hover:border-2 hover:border-[#DE5703] py-[24px] gap-[12px]">
+                        <img src="../assets/svg/category1.svg" alt="">
+                        <p class=" card-text w-[164px] text-center">Стартеры 
+                            и комплектующие</p>
+                    </div>
+                    <div class=" cursor-pointer card flex flex-col items-center rounded-xl border-2 border-transparent  bg-[#F1F1F1] hover:border-2 hover:border-[#DE5703] py-[24px] gap-[12px]">
+                        <img src="../assets/svg/category1.svg" alt="">
+                        <p class=" card-text w-[164px] text-center">Стартеры 
+                            и комплектующие</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="news mb-[30px] md:mb-[60] ">
+            <div class="containerr">
+                <div class="flex justify-between items-center flex-wrap"> 
+                    <h3 class="text-[#6E7191] font-bold text-[18px] sm:text-[36px]">Новости </h3>
+                    <button class="flex gap-2 items-center text-1 py-[8px] px-[14px] border border-1 rounded-md" >
+                        Посмотреть все
+                        <img src="../assets/svg/array-btn.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="mt-[30px]">
+                    <div class="w-full relative">
+                        <div class="swiper multiple-slide-carousel swiper-container relative">
+                         <div class="swiper-wrapper mb-16">
+                           <div class="swiper-slide">
+                            <div class="relative   rounded-2xl transition-all duration-500 ">
+                                <div class="block overflow-hidden">
+                                    <img src="../assets/img/card1.png" alt="Card image" />
+                                    </div>
+                                    <div class="mt-[15px]">
+                                    <h4 class="max-w-[400px] text-[#4E4B66] text-[18px] md:text-[28px] font-bold  mb-2  transition-all duration-500 ">Заголовок в две строчки
+                                        или в три строчки
+                                        </h4>
+                                    <p class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 mb-5 mt-[15px]">28.09.2022</p>
+                                    </div>
+                            </div>
+                           </div>
+                           <div class="swiper-slide">
+                            <div class="relative   rounded-2xl transition-all duration-500 ">
+                                <div class="block overflow-hidden">
+                                    <img src="../assets/img/card1.png" alt="Card image" />
+                                    </div>
+                                    <div class="mt-[15px]">
+                                    <h4 class="max-w-[400px] text-[#4E4B66] text-[18px] md:text-[28px] font-bold  mb-2  transition-all duration-500 ">Заголовок в две строчки
+                                        или в три строчки
+                                        </h4>
+                                    <p class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 mb-5 mt-[15px]">28.09.2022</p>
+                                    </div>
+                            </div>
+                           </div>
+                           <div class="swiper-slide">
+                            <div class="relative   rounded-2xl transition-all duration-500 ">
+                                <div class="block overflow-hidden">
+                                    <img src="../assets/img/card1.png" alt="Card image" />
+                                    </div>
+                                    <div class="mt-[15px]">
+                                    <h4 class="max-w-[400px] text-[#4E4B66] text-[18px] md:text-[28px] font-bold  mb-2  transition-all duration-500 ">Заголовок в две строчки
+                                        или в три строчки
+                                        </h4>
+                                    <p class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 mb-5 mt-[15px]">28.09.2022</p>
+                                    </div>
+                            </div>
+                           </div>
+                           <div class="swiper-slide">
+                            <div class="relative   rounded-2xl transition-all duration-500 ">
+                                <div class="block overflow-hidden">
+                                    <img src="../assets/img/card1.png" alt="Card image" />
+                                    </div>
+                                    <div class="mt-[15px]">
+                                    <h4 class="max-w-[400px] text-[#4E4B66] text-[18px] md:text-[28px] font-bold  mb-2  transition-all duration-500 ">Заголовок в две строчки
+                                        или в три строчки
+                                        </h4>
+                                    <p class="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 mb-5 mt-[15px]">28.09.2022</p>
+                                    </div>
+                            </div>
+                           </div>
+                         </div>
+
+                        </div>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="../assets/img/Banner.png" alt="">
+            </div>
+        </section>
+
+        <section class="zapjast py-[30px] md:py-[60px]">
+            <div class="containerr">
+                <h3 class="text-[#6E7191] font-bold text-[18px] sm:text-[36px]">
+                    Автозапчасти к технике
+                </h3>
+
+                <div class="flex flex-wrap justify-center items-center gap-[15px] mt-[30px]">
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                    <div class="kamaz bg-[#dfdfdf] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#F56E1E] rounded-[20px] pb-[21px]  flex flex-col items-center text-center">
+                        <img src="../assets/img/car.png" alt="">
+                        <h3 class="kamaz-text text-[#6E7191] font-bold">Грузовые</h3>
+                    </div>
+                </div>
+
+
+                <div class="mt-[30px] md:mt-[60px]">
+                    <img src="../assets/img/Banner.png" alt="">
+                </div>
+
+
+                <div class="grid grid-cols-1 gap-[30px] sm:grid-cols-2 md:grid-cols-3 mt-[30px] md:mt-[60px]">
+                    <div class="border-2 border-[#6E7191] flex justify-center py-[20px] px-[30px] rounded-2xl  gap-[20px]">
+                        <img src="../assets/svg/cargo.svg" alt="">
+                        <div >
+                            <h3 class="text-1 font-bold text-[18px]">Динамично</h3>
+                            <p class="text-[#6E7191] mt-[15px] max-w-[270px]">
+                                Мы предлагаем более 15000 наименований запчастей на все виды автотранспортных средств, тракторную и сельхозтехнику, спецтехнику.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-2 border-[#6E7191] flex justify-center py-[20px] px-[30px] rounded-2xl  gap-[20px]">
+                        <img src="../assets/svg/cargo.svg" alt="">
+                        <div >
+                            <h3 class="text-1 font-bold text-[18px]">Динамично</h3>
+                            <p class="text-[#6E7191] mt-[15px] max-w-[270px]">
+                                Мы предлагаем более 15000 наименований запчастей на все виды автотранспортных средств, тракторную и сельхозтехнику, спецтехнику.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-2 border-[#6E7191] flex justify-center py-[20px] px-[30px] rounded-2xl  gap-[20px]">
+                        <img src="../assets/svg/cargo.svg" alt="">
+                        <div >
+                            <h3 class="text-1 font-bold text-[18px]">Динамично</h3>
+                            <p class="text-[#6E7191] mt-[15px] max-w-[270px]">
+                                Мы предлагаем более 15000 наименований запчастей на все виды автотранспортных средств, тракторную и сельхозтехнику, спецтехнику.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-[30px] md:mt-[60px]">
+                    <h3 class="text-[#6E7191] font-bold text-[18px] sm:text-[36px]">Оптовая продажа автотракторных запчастей </h3>
+                    <p class="text-[#6E7191] mt-[20px]">Гармоничное развитие всех подразделений компании в условиях современного рынка дает нам возможность вместе с нашими партнерами чувствовать уверенность в завтрашнем дне. 
+ 
+                        Наша компания начала свой путь на рынке автозапчастей в 1993-м. </p>
+                        <a href="#" class="flex items-center gap-[10px] text-[#6E7191] mt-[10px] justify-center">Читать далее <img src="../assets/svg/down.svg" alt=""></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="form py-[30px] md:py-[60px]">
+            <div class="containerr">
+    
+                <div class="bg-[#FDE9DE] py-[25px] px-[32px] rounded-2xl">
+                    <h3 class="text-[#6E7191] font-bold text-[18px] sm:text-[26px]">
+                        Выберите категорию рассылки
+                    </h3>
+                    <div class=" flex flex-wrap  items-center  gap-[30px] mt-[15px]">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[10px]">
+                            <div class="flex items-center gap-[8px]">
+                                <img src="../assets/svg/done.svg" alt="">
+                                <p class="max-w-[153px] text-[14px] text-1">Электронная версия каталога продукции</p>
+                            </div>
+                            <div class="flex items-center gap-[8px]">
+                                <img src="../assets/svg/done.svg" alt="">
+                                <p class="max-w-[153px] text-[14px] text-1">Электронная версия каталога продукции</p>
+                            </div>
+                            <div class="flex items-center gap-[8px]">
+                                <img src="../assets/svg/done.svg" alt="">
+                                <p class="max-w-[153px] text-[14px] text-1">Электронная версия каталога продукции</p>
+                            </div>
+                        </div>
+                        <form class="max-w-[478px] w-full">
+                            <input type="text" placeholder="Введите Ваш e-mail " class="w-full py-[10px] px-[12px] rounded-lg " >
+                        </form>
+                        <div>
+                            <button class="text-[white] bg-1 py-[10px] px-[32px] rounded-lg"> 
+                                Подписаться
+                            </button>
+                        </div>
+                    </div>
+                    <p class="mt-[15px] text-[14px] text-[#6E7191]">Нажимая «Подписаться», вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- Main End -->
+
+
+
+    <footer class="bg-[#F1F1F1] pt-[46px] pb-[46px] md:pb-[118px]">
+        <div class="containerr">
+            <div class="grid grid-col-2 gap-[30px] sm:grid-cols-4 lg:grid-cols-5">
+                <div class="flex flex-col gap-[20px] items-start text-[#6E7191]">
+                    <img src="../assets/svg/logo2.svg" alt="">
+                    <div class="flex flex-col gap-[52px]">
+                        <div class="flex flex-col gap-[15px]">
+                            <p>
+                                Оптовая продажа запчастей  
+                                на все виды автотранспортных средств
+                            </p>
+                            <p>
+                                ИП Хомченко Максим Альбертович
+                                ОГРНИП 000000000   
+                            </p>
+                        </div>
+                        <div>
+                            <p>1993 - 2022 © АвтоЭлектрика</p>
+                            <p>Политика конфиденциальности</p>
+                        </div>
+                    </div>
+                </div>
+                <div >
+                    <h3 class="text-[#6E7191] font-bold">О компании</h3>
+                    <ul class="mt-[19px] text-[#6E7191] flex flex-col gap-[16px]">
+                        <li>
+                            <a href="#">Документы и реквизиты</a>
+                        </li>
+                        <li>
+                            <a href="#">Бренды</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудники</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Карьера</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[#6E7191] font-bold">О компании</h3>
+                    <ul class="mt-[19px] text-[#6E7191] flex flex-col gap-[16px]">
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Как зарегестрироваться</a>
+                        </li>
+                        <li>
+                            <a href="#">Как сделать заказ</a>
+                        </li>
+                        <li>
+                            <a href="#">Способы оплаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Гарантии возврата </a>
+                        </li>
+                        <li>
+                            <a href="#">Вопросы и ответы </a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка и склад</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-[#6E7191] font-bold">Сотрудничество</h3>
+                </div>
+                <div class="flex flex-col gap-[22px]">
+                    <div class="flex items-center border-b-2 border-[#6E7191] pb-[10px]">
+                        <p class=" text-[#6E7191] max-w-[160px]">Ссылка на форму обратной связи со службой контроля качества</p>
+                        <div class="flex items-center gap-[5px]">
+                            <img src="../assets/svg/tg.svg" alt="">
+                            <img src="../assets/svg/vk.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <p class="text-[#6E7191]">Время работы</p>
+                        <h3 class="text-[#6E7191] font-bold">пн. - пт. с 7:30 до 18:00</h3>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <p class="text-[#6E7191]">Телефоны:</p>
+                        <h3 class="text-[#6E7191] font-bold"> 8 (800) 455-55-15
+                            </h3>
+                        <h3 class="text-[#6E7191] font-bold">+7 (495) 108-54-64</h3>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <p class="text-[#6E7191]">Адрес эл. почты</p>
+                        <a href="mailto:info@auto-e.ru" class="text-[#6E7191] font-bold">info@auto-e.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <script>
+        var swiper = new Swiper(".progress-slide-carousel", {
+        loop: true,
+        fraction: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".progress-slide-carousel .swiper-pagination",
+          type: "progressbar",
+        },
+        });
+        </script>
+        <script>
+            var swiper = new Swiper(".multiple-slide-carousel", {
+              loop: true,
+              slidesPerView: 3,
+              spaceBetween: 20,
+              navigation: {
+                nextEl: ".multiple-slide-carousel .swiper-button-next",
+                prevEl: ".multiple-slide-carousel .swiper-button-prev",
+              },
+              autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+              },
+              breakpoints: {
+               1920: {
+                   slidesPerView: 3,
+                   spaceBetween: 30
+               },
+               1028: {
+                   slidesPerView: 3,
+                   spaceBetween: 30
+               },
+               990: {
+                   slidesPerView: 2,
+                   spaceBetween: 0
+               }
+             }
+            });
+           </script>
+</body>
+</html>
